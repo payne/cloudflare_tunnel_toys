@@ -74,9 +74,6 @@ def get_chuck_norris_quote():
     except:
         return "Chuck Norris has temporarily disabled the internet. Please try again later."
 
-@app.route('/auth/logout')
-def logout():
-    return '', 401  # This will trigger CloudFlare to show the login page again
 
 @app.route('/')
 def home():
